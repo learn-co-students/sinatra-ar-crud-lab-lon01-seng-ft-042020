@@ -6,7 +6,7 @@
 
 <form method="post" action="/articles/<%=@article.id%>">
 
-<input id=hidden type=hidden name=_method value="PATCH">
+<input type=hidden name=_method value="PATCH">
 <p> Update title? <input type="text" name="title" value="<%=@article.title %>"> </p>
 <p> Update contents?<input type="text" name="content" value="<%=@article.content %>"> </p>
 <input type="submit">
