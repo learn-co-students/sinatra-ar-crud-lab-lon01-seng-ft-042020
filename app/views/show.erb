@@ -1,0 +1,12 @@
+<!-- Display an articles title & content -->
+<h2> <%= @article.title%> </h2>
+<p> <%=@article.content%> </p>
+
+<!-- The form will send a request to the delete controller action -->
+<!-- The hidden input tag will override the POST request to DELETE -->
+<!-- Creates a button that allows you to delete that article -->
+<form method="post" action="/articles/<%=@article.id%>"> 
+<input id=hidden type=hidden name=_method value="DELETE">
+<input type=submit value=Delete>
+</form>
+

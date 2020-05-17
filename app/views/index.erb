@@ -1,0 +1,8 @@
+<h2> All Articles </h2>
+
+<!-- This enumerable will display all the articles -->
+<!-- Uses the instance variable @articles, that's defined in the controller -->
+<% @articles.each do |article| %>
+<h3> <%=article.title%> </h3>
+<p> <%=article.content%> </p>
+<%end%>
